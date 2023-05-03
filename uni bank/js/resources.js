@@ -42,5 +42,20 @@ for (let btn of buttons) {
     }
 }
 
+const searchIcon = document.getElementById('glass');
+const searchInput = document.querySelector('#list input');
+const closeSearch = document.getElementById('close-search');
+const searchBox = document.getElementById('list');
+
+searchIcon.addEventListener('click', () => {
+    searchBox.classList.toggle('show');
+    searchInput.focus();
+});
+
+closeSearch.addEventListener('click', () => {
+    searchBox.classList.remove('show');
+});
+
+
 
 
