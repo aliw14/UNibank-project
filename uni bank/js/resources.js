@@ -55,7 +55,24 @@ searchIcon.addEventListener('click', () => {
 closeSearch.addEventListener('click', () => {
     searchBox.classList.remove('show');
 });
+let chat_img = document.querySelector(".imaage")
 
+let chatpage = document.querySelector(".chatpage")
+
+let minus = document.querySelector("#minus")
+
+
+
+chat_img.addEventListener('click', () => {
+    chat_img.style.display = "none"
+    chatpage.style.display = "block"
+
+})
+
+minus.addEventListener("click", () => {
+    chatpage.style.display = "none"
+    chat_img.style.display = "block"
+})
 
 
 
